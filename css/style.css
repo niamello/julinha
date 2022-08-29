@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.header {
+    position: fixed;
+}
+
+.navbar {
+    background-color: #C4C4C4;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-container {
+    justify-content: space-evenly;
+    padding: 0vh 15vh;
+    align-items: center;
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-button {
+    align-items: center;
+    padding: 5px 20px;
+    background-color: black;
+    border-radius: 100px;
+    gap: 8px;
+}
+
+.hero {
+    background-size: cover;
+    min-height: 75vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: DimGray;
+    padding: 40px 235px;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 90px;
+    display: flex;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.hero-button {
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 8px;
+    background: black;
+    border-radius: 100px;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* CONTEÚDO */
+.conteudo {
+    margin-bottom: 5px;
+}
+
+.conteudo-principal {
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo-principal-caixa-cinza {
+    max-width: 300px;
+    height: 500px;
+    background-color: #d4d4d4;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 500px;
+}
+
+.conteudo-principal-titulo {
+    font-size: 2rem;
+    color: black;
+}
+
+.conteudo-principal-subtitulo {
+    color: black;
+}
+
+.conteudo-principal-botao {
+    color: white;
+    padding: 24px 32px;;
+    background: #E02B57;
+    border-radius: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    max-width: 130px;
+}
+
+.conteudo-secundario {
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo-secundario-caixa-cinza {
+    max-width: 300px;
+    height: 500px;
+    background-color: #d4d4d4;
+}
+
+.conteudo-secundario-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 500px;
+}
+
+.conteudo-secundario-titulo {
+    font-size: 2rem;
+    color: black;
+}
+
+.conteudo-secundario-subtitulo {
+    color: black;
+}
+
+.conteudo-secundario-botao {
+    color: white;
+    padding: 24px 32px;
+    background: #E02B57;
+    border-radius: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    max-width: 130px;
+}
+
+/* CARACTERISTICAS */
+.caracteristicas {
+    color: white;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 50px;
+}
+
+.caracteristicas h3 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.caracteristicas p {
+    max-width: 800px;
+    color: white;
+    text-align: left;
+}
+
+.caracteristicas .btn_2 {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: DimGray;
+    padding: 100px;
+}
+
+footer h2 {
+    font-weight: 400;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    text-align: center;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+.footer-box {
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+}
